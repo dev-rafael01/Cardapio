@@ -1,0 +1,51 @@
+:root {
+  background-color: #242424;
+}
+body {
+  background: #242424;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  justify-content: center;
+}
+
+.container button {
+  background-color: #0275d8;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  bottom: 16px;
+  right: 24px;
+  transition: all 0.1s linear;
+}
+
+.container button:hover {
+  box-shadow: rgba(100, 100, 101, 0.2) 0px 7px 7px 0px;
+  transform: scale(1.1);
+}
+.container h1  {
+  color: black;
+}
+.card {
+  color: black;
+}

@@ -1,0 +1,89 @@
+/* Fundo escuro semitransparente que cobre a tela inteira */
+.modal-overflow {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustado rgba correto */
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;     /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    z-index: 999;
+}
+
+/* Caixa branca do Modal */
+.modal-overflow .modal-body {
+    background-color: #ffffff;
+    padding: 32px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Título */
+.modal-overflow .modal-body h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+/* Container do Formulário */
+.modal-overflow .modal-body .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+/* Grupo de Label + Input */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #0070f3;
+}
+
+/* Botão Postar */
+.btn-secondary {
+    width: 100%;
+    padding: 12px;
+    background-color: #0070f3; /* Azul idêntico ao da aula */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0059b3;
+}
